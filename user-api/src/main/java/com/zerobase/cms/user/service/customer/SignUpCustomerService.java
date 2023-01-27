@@ -1,4 +1,4 @@
-package com.zerobase.cms.user.service;
+package com.zerobase.cms.user.service.customer;
 
 import static com.zerobase.cms.user.exception.ErrorCode.ALREADY_VERIFY;
 import static com.zerobase.cms.user.exception.ErrorCode.EXPIRE_CODE;
