@@ -1,0 +1,46 @@
+### 회원가입 (고객)
+POST http://localhost:8080/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1994-07-19",
+  "email": "seyoung5744@naver.com",
+  "name": "myName",
+  "password": "pw",
+  "phone": "01011112222"
+}
+### 이메일 인증 (고객)
+GET http://localhost:8080/signup/customer/verify?email=seyoung5744@naver.com&code=6is947QI3n
+
+### 로그인 (고객)
+POST http://localhost:8080/signIn/customer
+Content-Type: application/json
+
+{
+  "email": "seyoung5744@naver.com",
+  "password": "pw"
+}
+
+### 회원 정보 조회 (고객)
+GET http://localhost:8080/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6NFdnNnJTZjFTeCt1N1pHdWJuQjF1TjZjMS9OdldEMytBRTd0clJiaU04PSIsImp0aSI6IlN1YkhlS1VSUnJlUVkrV1NPbkJrdGc9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzUzMjQ2NDcsImV4cCI6MTY3NTQxMTA0N30.40MMKd2mkK855cAWNUfHM4W1yEqmivOQFvMXltvQFCY
+
+### 잔액 변경 (고객)
+POST http://localhost:8080/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6NFdnNnJTZjFTeCt1N1pHdWJuQjF1TjZjMS9OdldEMytBRTd0clJiaU04PSIsImp0aSI6IlN1YkhlS1VSUnJlUVkrV1NPbkJrdGc9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzUzMjQ2NDcsImV4cCI6MTY3NTQxMTA0N30.40MMKd2mkK855cAWNUfHM4W1yEqmivOQFvMXltvQFCY
+
+{
+  "from": "server",
+  "message": "돈 충전",
+  "money": 50000
+}
+
+
+############################
+
+### 회원가입 (셀러)
+
+### 로그인 (셀러)
+
