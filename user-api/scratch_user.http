@@ -52,11 +52,15 @@ Content-Type: application/json
   "phone": "01011112222"
 }
 
+### 이메일 인증 (셀러)
+GET http://localhost:8080/signup/seller/verify?email=seyoung574458@gmail.com&code=GtdrT6s8uV
+
+
 ### 로그인 (셀러)
-POST http://localhost:8080/signIn/customer
+POST http://localhost:8080/signIn/seller
 Content-Type: application/json
 
 {
-  "email": "seyoung5744@naver.com",
+  "email": "seyoung574458@gmail.com",
   "password": "pw"
 }
