@@ -29,6 +29,34 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJGZzdGU2RWU2l6cDJQRmVqbmRzR2tXTmtjU
 }
 
 
+### 상품 수정
+PUT http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJGZzdGU2RWU2l6cDJQRmVqbmRzR2tXTmtjUkdPZ0lvSk1FQ0crdEtTWTdRPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc1NTEwNTg0LCJleHAiOjE2NzU1OTY5ODR9.B6aO_G1Jr7hadOU2d7Lc9wPb8LReiN2cTJ0MWfpJBQA
 
-### 이메일 인증 (고객)
-GET http://localhost:8080/signup/customer/verify?email=seyoung5744@naver.com&code=6is947QI3n
+{
+  "description": "상품 설명",
+  "items": [
+    {
+      "id": 1,
+      "count": 1,
+      "name": "280",
+      "price": 100000
+    }
+  ],
+  "id": 1,
+  "name": "나이키 에어포스 한정판"
+}
+
+### 상품 아이템 수정
+PUT http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJGZzdGU2RWU2l6cDJQRmVqbmRzR2tXTmtjUkdPZ0lvSk1FQ0crdEtTWTdRPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc1NTEwNTg0LCJleHAiOjE2NzU1OTY5ODR9.B6aO_G1Jr7hadOU2d7Lc9wPb8LReiN2cTJ0MWfpJBQA
+
+
+{
+  "id": 1,
+  "count": 1,
+  "name": "260",
+  "price": 100000
+}
