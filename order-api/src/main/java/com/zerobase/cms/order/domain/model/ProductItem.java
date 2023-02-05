@@ -41,7 +41,8 @@ public class ProductItem extends BaseEntity{
     // 재고는 변경 가능하므로 @Audited 하지 않음
     private Integer count;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+//    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
 
