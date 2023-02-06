@@ -1,6 +1,7 @@
 package com.zerobase.cms.order.domain.repository;
 
 import com.zerobase.cms.order.domain.model.Product;
+import java.util.List;
 import java.util.Optional;
 import javax.persistence.Entity;
 import org.springframework.data.jpa.repository.EntityGraph;
@@ -14,4 +15,9 @@ public interface ProductRepository extends JpaRepository<Product, Long>, Product
 
     @EntityGraph(attributePaths = {"productItems"}, type = EntityGraphType.LOAD)
     Optional<Product> findBySellerIdAndId(Long sellerId, Long id);
+
+    @EntityGraph(attributePaths = {"productItems"}, type = EntityGraphType.LOAD)
+    List<Product> findAllByIdIn(List<Long> ids);
+
+
 }
