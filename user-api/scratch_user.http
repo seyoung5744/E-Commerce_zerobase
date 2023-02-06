@@ -10,7 +10,7 @@ Content-Type: application/json
   "phone": "01011112222"
 }
 ### 이메일 인증 (고객)
-GET http://localhost:8080/signup/customer/verify?email=seyoung5744@naver.com&code=6is947QI3n
+GET http://localhost:8080/signup/customer/verify?email=seyoung5744@naver.com&code=49Jo7BFRyF
 
 ### 로그인 (고객)
 POST http://localhost:8080/signIn/customer
